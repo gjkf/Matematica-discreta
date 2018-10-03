@@ -8,25 +8,41 @@
 \usepackage{caption}
 \usepackage{amsmath,amsfonts}
 \usepackage{titlesec}
-\usepackage{hyperref}
+\usepackage[pdftex,
+pdfauthor={Stefano Mecocci},
+pdftitle={discreta},
+pdfsubject={Matematica},
+pdfkeywords={matematica, formulario, formule},
+pdfproducer={LaTeX with hyperref},
+pdfcreator={pdflatex with hyperref}]{hyperref}
+\hypersetup{%
+  colorlinks,
+  citecolor=black,
+  filecolor=black,
+  linkcolor=blue,
+  urlcolor=black
+}
+\usepackage[all]{hypcap}
 
 \titlespacing\subsection{0pt}{70pt}{5pt}
-\newcommand{\Setsuchthat}{\;\ifnum\currentgrouptype=16 \middle\fi|\;} % https://github.com/gjkf/Algebra-1/blob/master/plot-snippets.tex
+\newcommand{\Setsuchthat}{\;\ifnum\currentgrouptype=16 \middle\fi|\;}
+  % https://github.com/gjkf/Algebra-1/blob/master/plot-snippets.tex
 
-\title{Matematica discreta}
-\author{Stefano Mecocci}
-\date{2018/2019}
+  \title{Matematica discreta}
+  \author{Stefano Mecocci}
+  \date{2018/2019}
 
-\setcounter{tocdepth}{3}
+  \setcounter{tocdepth}{3}
 
-\begin{document}
+  \begin{document}
   \maketitle
   \thispagestyle{empty}
-
-  \newpage
-  \tableofcontents
-  \newpage
-
+  {%
+    \newpage
+    \hypersetup{linkcolor=black}
+    \tableofcontents
+    \newpage
+  }
   \section{Insiemi}
   L'insieme è la base su cui il resto delle strutture matemmatiche sono definite. Esso è definito come una collezione di oggetti.
 
@@ -54,7 +70,7 @@
       $ x \in X $ & significa ``$x$ appartiene ad $X$''\\
     \end{tabular}
   \end{center}
-  Quando si "sbarra'' un simbolo in generale si intende l'opposto (es. $ \neq $ significa
+  Quando si ``sbarra'' un simbolo in generale si intende l'opposto (es. $ \neq $ significa
   non uguale).
 
   Inoltre sono presenti anche riferimenti ad insiemi conosciuti:
@@ -62,8 +78,8 @@
   \begin{itemize}
     \item $ \mathbb{N} = \{0, 1, 2, 3, \ldots\} $ è l'insieme dei numeri naturali
     \item $ \mathbb{Z} = \{ \ldots -2, -1, 0, 1, 2, 3, \ldots\} $ è l'insieme dei numeri interi
-      \item $ \mathbb{Q}  = \{\frac{a}{b} \Setsuchthat a,b \in \mathbb{Z}\:\text{e}\:b \neq 0\} $ è l'insieme dei numeri razionali
-      \item $ \mathbb{R} $ è l'insieme dei numeri reali
+    \item $ \mathbb{Q}  = \{\frac{a}{b} \Setsuchthat a,b \in \mathbb{Z}\:\text{e}\:b \neq 0\} $ è l'insieme dei numeri razionali
+    \item $ \mathbb{R} $ è l'insieme dei numeri reali
   \end{itemize}
 
   Alcuni esempi per chiare i simboli, osservando la definizione dell'insieme B
@@ -105,4 +121,4 @@
 
     \item $ \exists n \in A \Setsuchthat \text{n è un multiplo di 3} $ è vera, infatti è vero che \textbf{esiste almeno un elemento} di A che sia multiplo di 3
   \end{itemize}
-\end{document}
+  \end{document}
