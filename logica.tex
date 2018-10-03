@@ -9,6 +9,8 @@
 \usepackage{amsmath,amsfonts}
 \usepackage{titlesec}
 
+\usepackage{hyperref}
+
 \titlespacing\subsection{0pt}{70pt}{5pt}
 \newcommand{\Setsuchthat}{\;\ifnum\currentgrouptype=16 \middle\fi|\;} % https://github.com/gjkf/Algebra-1/blob/master/plot-snippets.tex
 
@@ -31,16 +33,14 @@
 
   \subsection{Rappresentazioni}
   Il modo più elementare per rappresentare gli insiemi consiste nell'usare il diagramma di Venn, ma i metodi più usati sono: di elencazione e di proprietà.
-
+Rappresentazione per elencazione
   \begin{equation}
     A = \{1, 2, 3, \ldots\}
   \end{equation}
-  \captionof{figure}{Rappresentazione per elencazione}
-
+Rappresentazione per proprietà
   \begin{equation}
     A = \{x \in X \Setsuchthat P(x)\}
   \end{equation}
-  \captionof{figure}{Rappresentazione per proprietà}
 
   \subsection{Basi}
   Negli appunti sono presenti alcuni simboli speciali di seguito spiegati:
@@ -53,7 +53,7 @@
       $ x \in X $ & significa ``$x$ appartiene ad $X$''\\
     \end{tabular}
   \end{center}
-  Quando si ``sbarra'' un simbolo in generale si intende l'opposto (es. $ \neq $ significa
+  Quando si "sbarra'' un simbolo in generale si intende l'opposto (es. $ \neq $ significa
   non uguale)\\[\baselineskip]
   \textbf{Attenzione:} Bisogna stare attenti ad alcune denotazioni, ovvero tenendo conto che $ A = \{a, b, c\} $:
 
