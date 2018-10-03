@@ -6,7 +6,7 @@
 
 \usepackage[left=2cm, right=2cm, top=2cm, bottom=2cm]{geometry}
 \usepackage{caption}
-\usepackage{amsmath}
+\usepackage{amsmath,amsfonts}
 \usepackage{titlesec}
 
 \titlespacing\subsection{0pt}{70pt}{5pt}
@@ -67,22 +67,22 @@
   Inoltre sono presenti anche riferimenti ad insiemi conosciuti:
 
   \begin{itemize}
-    \item $ N = \{0, 1, 2, 3, \ldots\} $ è l'insieme dei numeri naturali
-    \item $ Z = \{ \ldots -2, -1, 0, 1, 2, 3, \ldots $ è l'insieme dei numeri interi
-    \item $ Q  = \{\frac{a}{b} \Setsuchthat a,b \in Z\:e\:b \neq 0\} $ è l'insieme dei numeri razionali
-    \item $ R $ è l'insieme dei numeri reali
+    \item $ \mathbb{N} = \{0, 1, 2, 3, \ldots\} $ è l'insieme dei numeri naturali
+    \item $ \mathbb{Z} = \{ \ldots -2, -1, 0, 1, 2, 3, \ldots\} $ è l'insieme dei numeri interi
+      \item $ \mathbb{Q}  = \{\frac{a}{b} \Setsuchthat a,b \in \mathbb{Z}\:\text{e}\:b \neq 0\} $ è l'insieme dei numeri razionali
+      \item $ \mathbb{R} $ è l'insieme dei numeri reali
   \end{itemize}
 
   Alcuni esempi per chiare i simboli, osservando la definizione dell'insieme B
 
   \begin{equation}
-    B = \{x \in Z \Setsuchthat x\ap{2} < 1\}
+    B = \{x \in \mathbb{Z} \Setsuchthat x^{2} < 1\}
   \end{equation}
 
   Si può affermare che:
   \begin{itemize}
     \item $ 1 \notin B $ è vera
-    \item $ \forall x \in B \Setsuchthat x > 10 $ è falsa 
+    \item $ \forall x \in B \Setsuchthat x > 10 $ è falsa
   \end{itemize}
 
   % sottosezione
@@ -93,13 +93,13 @@
     A = \{4, 6, 8, 10, 12, \ldots\}
   \end{equation}
 
-  si può affermare che $ A \subseteq N $ è vera in quanto dice che ``A è un sottoinsieme
-  di N''. Se andiamo a controllare gli elementi presenti in A li ritroviamo in N. Potremmo anche dire che:
+  si può affermare che $ A \subseteq \mathbb{N} $ è vera in quanto dice che ``$A$ è un sottoinsieme
+  di $\mathbb{N}$''. Se andiamo a controllare gli elementi presenti in $A$ li ritroviamo
+  in $\mathbb{N}$. Potremmo anche dire che:
 
   \begin{itemize}
     \item $ \forall n \in A \Setsuchthat \text{n è un multiplo di 3} $ è falsa, infatti non è vero che \textbf{tutti} gli elementi di A sono multipli di 3
 
     \item $ \exists n \in A \Setsuchthat \text{n è un multiplo di 3} $ è vera, infatti è vero che \textbf{esiste almeno un elemento} di A che sia multiplo di 3
   \end{itemize}
-  
 \end{document}
