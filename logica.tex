@@ -1,0 +1,103 @@
+\documentclass[12pt,a4paper]{article}
+
+\usepackage[italian]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+\usepackage[left=2cm, right=2cm, top=2cm, bottom=2cm]{geometry}
+\usepackage{caption}
+\usepackage{amsmath}
+\usepackage{titlesec}
+
+\titlespacing\subsection{0pt}{70pt}{5pt}
+\newcommand{\Setsuchthat}{\;\ifnum\currentgrouptype=16 \middle\fi|\;} % https://github.com/gjkf/Algebra-1/blob/master/plot-snippets.tex
+
+\title{Matematica discreta}
+\author{Stefano Mecocci}
+\date{2018/2019}
+
+\setcounter{tocdepth}{3}
+
+\begin{document}
+  \maketitle
+  \thispagestyle{empty}
+
+  \newpage
+  \tableofcontents
+  \newpage
+
+  \section{Insiemi}
+  L'insieme è la base su cui il resto delle strutture matemmatiche sono definite. Esso è definito come una collezione di oggetti.
+
+  \subsection{Rappresentazioni}
+  Il modo più elementare per rappresentare gli insiemi consiste nell'usare il diagramma di Venn, ma i metodi più usati sono: di elencazione e di proprietà.
+
+  \begin{equation}
+    A = \{1, 2, 3, ...\}
+  \end{equation}
+  \captionof{figure}{Rappresentazione per elencazione}
+
+  \begin{equation}
+    A = \{x \in X \Setsuchthat P(x)\}
+  \end{equation}
+  \captionof{figure}{Rappresentazione per proprietà}
+
+  \subsection{Basi}
+  Negli appunti sono presenti alcuni simboli speciali di seguito spiegati:
+
+  \begin{itemize}
+    \item $ \emptyset $ è l'insieme vuoto equivalente a $ \{\} $
+    \item $ \forall x $ significa "per ogni x"
+    \item $ \exists x $ significa "esiste almeno un x"
+    \item $ \Setsuchthat $ significa "tale che"
+    \item $ x \in X $ significa "x appartiene ad X"
+    \item quando si "sbarra" un simbolo in generale si intende l'opposto(es. $ \neq $ significa non uguale)
+  \end{itemize}
+
+  \textbf{Attenzione:} Bisogna stare attenti ad alcune denotazioni, ovvero tenendo conto che $ A = \{a, b, c\} $:
+
+  \begin{itemize}
+    \item $ \emptyset \neq \{\emptyset\} $
+    \item $ a \in A $ è vero
+    \item $ \{a\} \subseteq A $ è vero
+    \item $ \{a\} \in A $ è \textbf{falso}
+  \end{itemize}
+
+  Inoltre sono presenti anche riferimenti ad insiemi conosciuti:
+
+  \begin{itemize}
+    \item $ N = \{0, 1, 2, 3, ...\} $ è l'insieme dei numeri naturali
+    \item $ Z = \{ ... -2, -1, 0, 1, 2, 3, ...\} $ è l'insieme dei numeri interi
+    \item $ Q  = \{\frac{a}{b} \Setsuchthat a,b \in Z\:e\:b \neq 0\} $ é l'insieme dei numeri razionali
+    \item $ R $ é l'insieme dei numeri reali
+  \end{itemize}
+  
+  Alcuni esempi per chiare i simboli, osservando la definizione dell'insieme B
+
+  \begin{equation}
+    B = \{x \in Z \Setsuchthat x\ap{2} < 1\}
+  \end{equation}
+
+  Si può affermare che:
+  \begin{itemize}
+    \item $ 1 \notin B $ è vera
+    \item $ \forall x \in B \Setsuchthat x > 10 $ é falsa 
+  \end{itemize}
+
+  % sottosezione
+  \subsection{Sottoinsiemi}
+  Prendendo come riferimento l'insieme
+
+  \begin{equation}
+    A = \{4, 6, 8, 10, 12, ...\}
+  \end{equation}
+
+  si può affermare che $ A \subseteq N $ é vera in quanto dice che "A è un sottoinsieme di N". Se andiamo a controllare gli elementi presenti in A li ritroviamo in N. Potremmo anche dire che:
+
+  \begin{itemize}
+    \item $ \forall n \in A \Setsuchthat \text{n é un multiplo di 3} $ è falsa, infatti non è vero che \textbf{tutti} gli elementi di A sono multipli di 3
+
+    \item $ \exists n \in A \Setsuchthat \text{n é un multiplo di 3} $ è vera, infatti è vero che \textbf{esiste almeno un elemento} di A che sia multiplo di 3
+  \end{itemize}
+  
+\end{document}

@@ -1,0 +1,17 @@
+*.toc
+
+*.aux
+
+*.log
+
+*.out
+
+*.tdo
+
+*.synctex.gz
+
+*.fls
+
+*.fdb_latexmk
+
+*.auxlock
