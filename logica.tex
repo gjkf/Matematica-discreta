@@ -8,7 +8,6 @@
 \usepackage{caption}
 \usepackage{amsmath,amsfonts}
 \usepackage{titlesec}
-
 \usepackage{hyperref}
 
 \titlespacing\subsection{0pt}{70pt}{5pt}
@@ -33,14 +32,16 @@
 
   \subsection{Rappresentazioni}
   Il modo più elementare per rappresentare gli insiemi consiste nell'usare il diagramma di Venn, ma i metodi più usati sono: di elencazione e di proprietà.
-Rappresentazione per elencazione
+
   \begin{equation}
     A = \{1, 2, 3, \ldots\}
   \end{equation}
-Rappresentazione per proprietà
+  \captionof{figure}{Rappresentazione per elencazione}
+
   \begin{equation}
     A = \{x \in X \Setsuchthat P(x)\}
   \end{equation}
+  \captionof{figure}{Rappresentazione per proprietà}
 
   \subsection{Basi}
   Negli appunti sono presenti alcuni simboli speciali di seguito spiegati:
@@ -54,15 +55,7 @@ Rappresentazione per proprietà
     \end{tabular}
   \end{center}
   Quando si "sbarra'' un simbolo in generale si intende l'opposto (es. $ \neq $ significa
-  non uguale)\\[\baselineskip]
-  \textbf{Attenzione:} Bisogna stare attenti ad alcune denotazioni, ovvero tenendo conto che $ A = \{a, b, c\} $:
-
-  \begin{itemize}
-    \item $ \emptyset \neq \{\emptyset\} $
-    \item $ a \in A $ è vero
-    \item $ \{a\} \subseteq A $ è vero
-    \item $ \{a\} \in A $ è \textbf{falso}
-  \end{itemize}
+  non uguale).
 
   Inoltre sono presenti anche riferimenti ad insiemi conosciuti:
 
@@ -83,6 +76,16 @@ Rappresentazione per proprietà
   \begin{itemize}
     \item $ 1 \notin B $ è vera
     \item $ \forall x \in B \Setsuchthat x > 10 $ è falsa
+    \\[\baselineskip]
+  \end{itemize}
+
+  \textbf{Attenzione:} Bisogna stare attenti ad alcune denotazioni, ovvero tenendo conto che $ A = \{a, b, c\} $:
+
+  \begin{itemize}
+    \item $ \emptyset \neq \{\emptyset\} $
+    \item $ a \in A $ è vero
+    \item $ \{a\} \subseteq A $ è vero
+    \item $ \{a\} \in A $ è \textbf{falso}
   \end{itemize}
 
   % sottosezione
